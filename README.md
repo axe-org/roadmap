@@ -17,6 +17,19 @@
 
 2018.8月完成
 
-## 0.5.0
 
-* Android支持 ： 考虑安卓模块的接入，暂时无思路， 半年以后再考虑。
+## 计划列表
+
+### important feature
+
+*  Android支持
+*  单元测试扩展， 自动化测试时，添加 Instruments 中常用的一些检测。
+* js模块的多页面应用支持
+* payload数据的 不可变， 以及复制。
+
+### bugfix or optimize
+
+* axe-admin-web : 处理授权URL的bug，需要将URL设置到 vuex中，以进行监听！
+* axe-js , axe-react : 使用`Promise`。
+* axe-react : closePage, 支持传入参数 ，支持一次关闭多层页面。
+* react-native 和 h5 跳转时， 支持title参数，以提前设置标题，避免标题为空。
