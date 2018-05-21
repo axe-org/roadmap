@@ -26,10 +26,15 @@
 *  单元测试扩展， 自动化测试时，添加 Instruments 中常用的一些检测。
 * js模块的多页面应用支持
 * payload数据的 不可变， 以及复制。
+* Ground 项目也有API文件，以记录一些公共的事件、路由和数据， 公共的`Model`类型。
+* 优化模块初始化，制作脚手架。
+*  资源文件的管理示例与规范。
+*  项目结构优化，在`Axe`文件夹下，将自动产生内容放到一个文件夹里，不然axe文件夹
+*  `docker`优化： 提供文档修改支持，将文档复制到`/axe`目录，以支持自定义文档。
 
 ### bugfix or optimize
 
-* axe-admin-web : 处理授权URL的bug，需要将URL设置到 vuex中，以进行监听！
 * axe-js , axe-react : 使用`Promise`。
 * axe-react : closePage, 支持传入参数 ，支持一次关闭多层页面。
 * react-native 和 h5 跳转时， 支持title参数，以提前设置标题，避免标题为空。
+* axe-js、axe-react:  `data`提供 changeModel接口， 设置与修改有不同，设置必须全`key`值，而修改只需要修改单独的内容。
